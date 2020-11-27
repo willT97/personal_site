@@ -1,0 +1,77 @@
+.top-squares, .bottom-squares {
+    position: relative;
+}
+
+.square {
+    position: absolute;
+    width: auto;
+    transform: translateX(-50%);
+    display: block;
+}
+
+// move this into an scss function
+#square-1 {
+    opacity: 0.5;
+    top: 170px;
+    height: 130px;
+    transform: rotate(340deg);
+    left: calc(50% + 300px);
+}
+
+#square-2 {
+    height: 100px;
+    top: 110px;
+    opacity: 35%;
+    transform: rotate(280deg);
+    left: calc(50% + 410px);
+}
+
+#square-3 {
+    height: 80px;
+    top: 40px;
+    opacity: 25%;
+    transform: rotate(260deg);
+    left: calc(50% + 480px);
+}
+
+#bottom-square-1 {
+    height: 90px;
+    top: calc(max(595px, 80vh + 18vw - 200px));
+    opacity: 35%;
+    transform: rotate(60deg);
+    left: calc(50% - 490px);
+}
+
+#bottom-square-2 {
+    height: 65px;
+    top: calc(max(660px, 80vh + 18vw - 130px));
+    opacity: 25%;
+    transform: rotate(45deg);
+    left: calc(50% - 550px);
+}
+
+
+// media query for when it starts stretching this needs to stretch
+@media screen and (min-width: 1200px) {
+    #square-1 {
+        left: calc(75%);
+        top: calc(9vw + 62px);
+    }
+    #square-2 {
+        left: calc(84.2%);
+        top: calc(8vw + 14px);
+    }
+    #square-3 {
+        left: calc(90%);
+        top: calc(5vw - 19px);
+    }
+
+    #bottom-square-1 {
+        left: calc(9%);
+        top: calc(max(5vw + 80vh - 45px, 535px + 5vw));
+    }
+    #bottom-square-2 {
+        left: calc(4%);
+        top: calc(max(9vw + 80vh - 23px, 607px + 5vw));
+    }
+}

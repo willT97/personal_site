@@ -1,0 +1,229 @@
+.background {
+  background: -webkit-gradient(linear, left top, right bottom, from(#69f6ff), color-stop(130%, #f3ba27));
+  background: linear-gradient(to bottom right, #69f6ff 0%, #f3ba27 130%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.inner-blur {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  height: 100%;
+  width: 70%;
+  visibility: hidden;
+  max-width: 1400px;
+}
+
+@media screen and (min-width: 1500px) {
+  .inner-blur {
+    visibility: visible;
+  }
+}
+
+.top-lines {
+  position: relative;
+  top: calc(min(0px, 120px - 10vw));
+}
+
+.bottom-lines {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+  top: calc(max(800px, 80vh + 18vw));
+}
+
+.line {
+  position: absolute;
+  min-width: 1200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100vw;
+}
+
+.line1 {
+  top: 0px;
+}
+
+.line2 {
+  top: 30px;
+}
+
+.line3 {
+  top: 65px;
+}
+
+.line4 {
+  top: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-lines {
+    top: calc(max(80vh + 18vw, 585px + 18vw));
+  }
+}
+
+.top-squares, .bottom-squares {
+  position: relative;
+}
+
+.square {
+  position: absolute;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+}
+
+#square-1 {
+  opacity: 0.5;
+  top: 170px;
+  height: 130px;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+  left: calc(50% + 300px);
+}
+
+#square-2 {
+  height: 100px;
+  top: 110px;
+  opacity: 35%;
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+  left: calc(50% + 410px);
+}
+
+#square-3 {
+  height: 80px;
+  top: 40px;
+  opacity: 25%;
+  -webkit-transform: rotate(260deg);
+          transform: rotate(260deg);
+  left: calc(50% + 480px);
+}
+
+#bottom-square-1 {
+  height: 90px;
+  top: calc(max(595px, 80vh + 18vw - 200px));
+  opacity: 35%;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  left: calc(50% - 490px);
+}
+
+#bottom-square-2 {
+  height: 65px;
+  top: calc(max(660px, 80vh + 18vw - 130px));
+  opacity: 25%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: calc(50% - 550px);
+}
+
+@media screen and (min-width: 1200px) {
+  #square-1 {
+    left: calc(75%);
+    top: calc(9vw + 62px);
+  }
+  #square-2 {
+    left: calc(84.2%);
+    top: calc(8vw + 14px);
+  }
+  #square-3 {
+    left: calc(90%);
+    top: calc(5vw - 19px);
+  }
+  #bottom-square-1 {
+    left: calc(9%);
+    top: calc(max(5vw + 80vh - 45px, 535px + 5vw));
+  }
+  #bottom-square-2 {
+    left: calc(4%);
+    top: calc(max(9vw + 80vh - 23px, 607px + 5vw));
+  }
+}
+
+.main-content {
+  display: block;
+  margin-top: -100vh;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-box {
+  height: 400px;
+  width: 600px;
+  margin: 20px;
+  background-color: white;
+  border: 3px solid #4a4a4a;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.content-box p {
+  text-align: left;
+  padding: 30px;
+  margin-top: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 36px;
+}
+
+.person-sitting {
+  margin-bottom: -100px;
+  margin-top: -100px;
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content-box {
+    margin-top: 160px;
+    margin-left: -60px;
+  }
+  .person-sitting {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -140px;
+    margin-right: -20px;
+  }
+}
+
+html {
+  height: 100%;
+  min-width: 320px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=style.css.map */

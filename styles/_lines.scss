@@ -1,0 +1,43 @@
+.top-lines {
+    position: relative;
+    top: calc(min(0px, 120px - 10vw));
+}
+
+.bottom-lines {
+    transform: rotate(180deg);
+    position: relative;
+    top: calc(max(800px, 80vh + 18vw));
+}
+
+
+.line {
+    position: absolute;
+    min-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+.line1 {
+    top: 0px;
+}
+
+.line2 {
+    top: 30px;
+}
+
+.line3 {
+    top: 65px;
+}
+
+.line4 {
+    top: 80px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .bottom-lines {
+        // invalid property value?
+        top: calc(max(80vh + 18vw, 585px + 18vw));
+    }
+}

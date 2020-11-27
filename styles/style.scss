@@ -1,0 +1,17 @@
+@import './variables';
+@import './background';
+@import './lines';
+@import './squares';
+@import './maincontent';
+
+html {
+    height: 100%;
+    min-width: 320px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
