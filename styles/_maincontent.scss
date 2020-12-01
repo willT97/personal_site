@@ -2,6 +2,8 @@
     display: block;
     margin-top: -100vh;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -14,13 +16,16 @@
     flex-direction: column;
 }
 
+
 .content-box {
-    height: 400px;
-    width: 600px;
-    margin: 20px;
+    height: auto;
+    width: 95vw;
+    max-width: 600px;;
+
     background-color: white;
     border: 3px solid #4a4a4a;
     text-align: center;
+    margin: auto;
 }
 
 h1 {
@@ -28,6 +33,7 @@ h1 {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
 .content-box p {
     text-align: left;
     padding: 30px;
@@ -37,21 +43,24 @@ h1 {
     font-size: 36px;
 }
 
-.person-sitting {
+.person-container {
     margin-bottom: -100px;
     margin-top: -100px
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .content {
         flex-direction: row;
     }
-    .content-box {
+
+    .flex-container {
         margin-top: 160px;
         margin-left: -60px;
     }
 
-    .person-sitting {
+    .person-container {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: -140px;
